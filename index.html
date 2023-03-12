@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School site</title>
+    <link rel="shortcut icon" href="icons/logo.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <nav class="nav">
+        <div class="nav__container container">
+            <img class="nav__logo" src="img/logo.svg" alt="">
+            <div class="nav__hamb" onclick="menuHamb()">
+                <span id="span1" class="open"></span>
+                <span id="span2" class="open"></span>
+                <span id="span3" class="open"></span>
+            </div>
+            <div class="nav__hamb-menu">
+                <ul>
+                    <li class="nav__hamb-item"><a href="#share">Проекты</a></li>
+                    <li class="nav__hamb-item"><a href="#prompt">Как поделиться проектом</a></li>
+                    <li class="nav__hamb-item"><a href="#evaluation">Оценивание</a></li>
+                    <li class="nav__hamb-item">
+                        <img src="img/globe.svg" />
+                        <h4>ГБОУ(СОШ)№11</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__navigation">
+                <a href="#share">Проекты</a>
+                <a href="#prompt">Как поделиться проектом</a>
+                <a href="#evaluation">Оценивание</a>
+            </div>
+            <div class="nav__school">
+                <img src="img/globe.svg" />
+                <h4>ГБОУ(СОШ)№11</h4>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header" id="header">
+        <div class="header__opacity-bgc opacity-bgc"></div>
+        <div class="header__container container">
+            <div class="header__main wow slideInLeft" data-wow-duration="1s" data-wow-offset='100'>
+                <h1>Нас не надо доставать, нам еще ЕГЭ сдавать!</h1>
+                <p>Здесь учащиеся смогут делиться своими проектами</p>
+                <div class="buttons">
+                    <button class="watchPrj" onclick="location.href='https://docs.google.com/document/d/1gnChG1KEKOzlujvR7iUG194S_5M6iL_jt6brHroi2OM/edit'">Поделиться</button>
+                </div>
+            </div>
+            <div class="header__block wow slideInRight" data-wow-duration="1s" data-wow-offset='100'>
+                <img src="img/headerPict.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="prompt" id="prompt">
+        <div class="prompt__container container">
+            <div class="prompt__text wow fadeIn" data-wow-duration="0.5s" data-wow-offset='200'>
+                <h2>Как поделиться проектом</h2>
+                <p>3 простых шага</p>
+            </div>
+            <div class="prompt__steps">
+                <div class="prompt__step prompt__step-1 wow slideInRight" data-wow-offset='200' data-wow-duration="0.5s">
+                    <h3>Нажать кнопку</h3><button class="btndsbld" disabled="true">Поделиться</button>
+
+                </div>
+                <div class="prompt__step prompt__step-2 wow slideInRight" data-wow-offset='200' data-wow-duration="0.5s">
+                    <h3>В гугл документе запросить права на редактирование (ФИО уч.)</h3><img src="img/blank.svg" alt="">
+                </div>
+                <div class="prompt__step prompt__step-3 wow slideInRight" data-wow-offset='200' data-wow-duration="0.5s">
+                    <h3>Когда права даны, вписать в таблицу необходимую инф.</h3><img src="img/pen.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="evaluation" id="evaluation">
+        <div class="evaluation__opacity-bgc opacity-bgc"></div>
+        <div class="evaluation__container">
+            <div class="evaluation__main wow fadeIn" data-wow-duration="0.5s" data-wow-offset='200'>
+                <div class="evaluation__text">
+                    <h2>Общие критерии оценивания проекта</h2>
+                    <p>Оцениваются работы по следующим общим критериям:</p>
+                </div>
+            </div>
+            <div class="evaluation__items slider wow slideInRight" data-wow-duration="0.5s" data-wow-offset='200'>
+                <div class="evaluation__item-1 evaluation__item slider__item">
+                    <h3>Обоснование актуальности проекта</h3>
+                </div>
+                <div class="evaluation__item-2 evaluation__item slider__item">
+                    <h3>Образ продукта</h3>
+                </div>
+                <div class="evaluation__item-3 evaluation__item slider__item">
+                    <h3>Логика поэтапного планирования (задачи)</h3>
+                </div>
+                <div class="evaluation__item-4 evaluation__item slider__item">
+                    <h3>Продукт</h3>
+                </div>
+                <div class="evaluation__item-5 evaluation__item slider__item">
+                    <h3>Защита (представление работы)</h3>
+                </div>
+                <div class="evaluation__item-6 evaluation__item slider__item">
+                    <h3>Владение методами</h3>
+                </div>
+                <div class="evaluation__item-7 evaluation__item slider__item">
+                    <h3>Оригинальность</h3>
+                </div>
+            </div>
+            <div class="content"></div>
+        </div>
+    </section>
+
+    <section class="share" id="share">
+        <div class="share__container container">
+            <div class="share__main wow slideInRight" data-wow-duration="0.5s" data-wow-offset='200'>
+                <h2>Ученики под конец года должны выставить свои проекты</h2>
+                <p>просмотреть пошаговую инструкцию как поделиться проектом можно выше</p>
+                <button class="watchPrj" onclick="location.href='https://docs.google.com/document/d/1gnChG1KEKOzlujvR7iUG194S_5M6iL_jt6brHroi2OM/edit'">Поделиться</button>
+            </div>
+            <div class="share__img wow slideInLeft" data-wow-duration="1s" data-wow-offset='200'>
+                <img src="img/schoolboy.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer__opacity-bgc opacity-bgc"></div>
+        <div class="footer__container container">
+            <div class="footer__up">
+                <div class="footer__logoSchool">
+                    <img class="nav__logo" src="img/logo.svg" alt="">
+                    <div class="nav__school">
+                        <p>ГБОУ(СОШ)№11</p>
+                    </div>
+                </div>
+                <div class="footer__motivation">
+                    <h2>Приложи сердце твое к учению и уши твои к умным словам.</h2>
+                    <p>Ветхий Завет. Притчи Соломона</p>
+                </div>
+            </div>
+            <div class="footer_down">
+                <a href="#share">Проекты</a>
+                <a href="#prompt">Как поделиться проектом</a>
+                <a href="#evaluation">Оценивание</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

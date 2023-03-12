@@ -1,0 +1,459 @@
+@font-face
+    font-family: 'Jost-medium'
+    src: url('../fonts/Jost-Medium.eot')
+    src: local('☺'), url('../fonts/Jost-Medium.woff') format('woff'), url('../fonts/Jost-Medium.ttf') format('truetype'), url('../fonts/Jost-Medium.svg') format('svg')
+    font-weight: 500
+    font-style: normal
+@font-face
+    font-family: 'Jost-regular'
+    src: url('../fonts/Jost-Regular.eot')
+    src: local('☺'), url('../fonts/Jost-Regular.woff') format('woff'), url('../fonts/Jost-Regular.ttf') format('truetype'), url('../fonts/Jost-Regular.svg') format('svg')
+    font-weight: normal
+    font-style: normal
+
+body
+    font-family: 'Jost-medium'
+    font-weight: 500
+    color: #001049
+    display: flex
+    flex-direction: column
+
+.container
+    max-width: 1440px !important
+    margin: 30px 0
+
+.slider
+    display: flex
+    .slick-track
+        justify-content: space-between
+        display: flex
+        width: 100%
+        height: 100%
+
+    .slick-list
+        overflow: hidden
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: cente
+        height: 320px !important
+        width: 100%
+        border-radius: 40px !important
+
+    .slick-slide
+        width: 270px !important
+        height: 250px !important
+        margin: auto
+
+        box-shadow: 0 10px 50px rgba(86, 133, 255, 0.15)
+.content
+    .slick-prev
+        display: none !important
+    .slick-next
+        margin: 10px
+        background: url(../img/arrow.svg) 0 0 no-repeat
+        background-color: rgba(86, 133, 255, 0.05)
+        font-size: 0
+        border: 0
+        width: 100px
+        height: 25px
+        &:hover
+            transform: translate(15px)
+        &:active
+            transform: translate(25px)
+
+.visible
+    top: 150px !important
+
+button
+    font-family: 'Jost-medium'
+    font-weight: 500
+    height: 60px
+    transition: 0.5s
+    cursor: pointer
+    box-shadow: 0 10px 50px rgba(86, 133, 255, 0.15)
+.shareButton
+    width: 190px
+    background-color: #556688
+    color: white
+    border-radius: 10px
+    border: 0
+    height: 60px
+.watchPrj
+    width: 160px
+    border-radius: 10px
+    border: 2px solid #556688
+    background-color: white
+.btndsbld
+    width: 160px
+    border-radius: 10px
+    border: 2px solid #556688
+    background-color: white
+    cursor: default !important
+
+.watchPrj, .shareButton
+    &:hover
+        transform: scale(0.95)
+        background-color: #116464
+        border: 2px solid #556688
+        color: white
+    &:active
+        transform: scale(0.90)
+
+p
+    font-family: 'Jost-regular'
+    font-weight: normal
+    color: #116464
+a
+    text-decoration: none
+    transition: all 0.5s
+    border-radius: 15px
+    cursor: pointer
+    &:hover
+        color: #116464 !important
+
+.nav__logo
+    width: 70px
+
+.nav
+    height: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 9
+    padding: 0 20px 0 20px
+    .nav__container
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    .nav__school
+        display: flex !important
+    .nav__hamb-menu
+        position: absolute
+        top: -450px
+        width: 100%
+        height: 450px
+        left: 0 !important
+        transition: 0.5s
+        background-color: white
+        box-shadow: 0 10px 50px rgba(86, 133, 255, 0.15)
+        .nav__hamb-item
+            display: flex
+            gap: 10px
+        ul
+            width: 100%
+            height: 100%
+            padding: 0
+            list-style-type: none
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+
+    .nav__hamb
+        display: none
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        gap: 4px
+        transition: 0.5s
+        span
+            width: 30px
+            height: 4px
+            border-radius: 50px
+            background-color: black
+
+        &:hover
+            transform: scale(0.9)
+
+        &:active
+            transform: scale(0.8)
+
+    .nav__navigation
+        display: flex
+        gap: 30px
+    a
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #001049
+        height: 35px
+        min-width: 100px
+        max-width: 200px
+        border-radius: 15px
+        text-align: center
+        text-decoration: none
+
+.header
+    height: 500px
+    display: flex
+    justify-content: center
+    align-items-center
+    background: rgba(86, 133, 255, 0.05)
+    .header__block
+        margin: 0 30px 0 30px
+        img
+            box-shadow: 0 10px 50px rgba(86, 133, 255, 0.3)
+            border-radius: 22px
+            width: 200px !important
+    .header__container
+        z-index: 2
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .header__main
+            display: flex
+            flex-direction: column
+            max-width: 400px
+            margin: 0 0 0 30px
+            .buttons
+                display: flex
+                flex-wrap: wrap
+                justify-content: start
+                gap: 15px
+
+.prompt
+    display: flex
+    justify-content: center
+    align-items-center
+    .prompt__container
+        width: 100%
+        display: flex
+        align-items: start
+        justify-content: space-between
+        gap: 50px
+        .prompt__text
+            display: flex
+            flex-direction: column
+            max-width: 250px
+            margin: 0 0 0 30px
+            h2
+                margin: 0
+        .prompt__steps
+            display: flex
+            flex-direction: column
+            width: 900px
+            align-items: center
+            margin: 20px 0
+            gap: 50px
+            button, img
+                margin-right: 30px !important
+            .prompt__step-1
+                align-self: center
+            .prompt__step-2
+                align-self: end
+            .prompt__step-3
+                align-self: start
+            .prompt__step
+                width: 505px
+                height: 190px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                border-radius: 20px
+                box-shadow: 0 10px 50px rgba(86, 133, 255, 0.15)
+                h3
+                    margin-left: 30px
+
+.evaluation
+    display: flex
+    justify-content: center
+    align-items: center
+    background: rgba(86, 133, 255, 0.05)
+    .evaluation__container
+        z-index: 2
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        margin: 30px 0
+        .evaluation__main
+            text-align: center
+            mix-width: 300px
+            max-width: 600px
+            .evaluation__text
+                text-align: center
+        .evaluation__items
+            width: 100%
+            max-width: 1440px
+            height: 300px
+            display: flex
+            justify-content: space-around
+            align-items: center
+            z-index: 3
+            .evaluation__item
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: #556688
+                color: white
+                position: relative
+                text-align: center
+                border-radius: 40px
+                transition: all 0.5s
+                h3
+
+.share
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    .share__container
+        width: 100%
+        display: flex
+        justify-content: start
+        text-align: start
+        position: relative
+        .share__main
+            margin-left: 30px
+            p
+                max-width: 400px
+                margin: 20px 50% 50px 0
+
+            h2
+                font-size: 40px
+                max-width: 800px
+        .share__img
+            align-self: end
+            position: absolute
+            right: 0
+
+.footer
+    display: flex
+    justify-content: center
+    align-items: center
+    background: rgba(86, 133, 255, 0.05)
+    a
+        color: #001049
+    .footer__container
+        width: 100%
+        display: flex
+        gap: 30px
+        flex-direction: column
+        .footer__up
+            z-index: 2
+            display: flex
+            justify-content: space-between
+            padding: 0 30px
+            .footer__logoSchool
+                margin-right: 10px
+            .footer__motivation
+                text-align: end
+                width: 50%
+        .footer_down
+            z-index: 2
+            display: flex
+            gap: 30px
+            flex-wrap: wrap
+            padding: 0 30px
+            font-size: 1.3em
+
+@media screen and (max-width: 1100px)
+    .share
+        .share__img
+            img
+                height: 210px
+
+@media screen and (max-width: 1025px)
+    .benefit
+        img
+            width: 500px !important
+            position: relative
+            top: 120px !important
+
+@media screen and (max-width: 769px)
+    .nav
+        .nav__navigation
+            display: none
+        .nav__school
+            display: none !important
+        .nav__hamb
+            display: flex !important
+
+    .prompt
+        .prompt__container
+            flex-direction: column
+            gap: 0 !important
+        .prompt__steps
+            width: 400px !important
+            align-self: end
+            .prompt__step
+                width: 405px !important
+                height: 150px !important
+                align-self: center !important
+        .prompt__text
+            justify-content: start !important
+            margin: 0 30px !important
+    .benefit
+        img
+            display: none
+        .benefit__container
+            justify-content: center !important
+    .share
+        .share__main
+            p
+                max-width: 800px !important
+            h2
+                font-size: 30px !important
+
+@media screen and (max-width: 500px)
+    .header
+        .header__block
+            display: none
+        .header__container
+            justify-content: center
+            .header__main
+                margin: 0 30px
+
+@media screen and (max-width: 426px)
+    .nav__logo
+        width: 50px !important
+    body
+        p
+            font-size: 0.8em !important
+        h1
+            font-size: 2em !important
+        h2
+            font-size: 1.2em !important
+        h3
+            font-size: 1em !important
+    .benefit
+        height: 650px
+        .benefit__opacity-bgc
+            width: 100%
+            opacity: 5%
+            height: 650px
+            background-color: #5685FF
+        button
+            position: static !important
+            width: 100% !important
+        .benefit__num
+            height: 55px !important
+            min-width: 55px !important
+            max-width: 55px !important
+            font-size: 1.5em !important
+        .benefit__arg
+            flex-direction: column
+    .header__blocks
+        display: none !important
+    .prompt
+        height: 750px
+        .prompt__text
+            margin: 20px !important
+        .prompt__steps
+            width: 300px !important
+            align-self: end
+
+            .prompt__step
+                width: 305px !important
+                height: 150px !important
+                align-self: center !important
+            .prompt__step-2
+                img
+                    width: 100px !important
+    .share
+        .share__img
+            display: none !important
