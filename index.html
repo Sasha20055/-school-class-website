@@ -55,15 +55,17 @@
     <header class="header" id="header">
         <div class="header__opacity-bgc opacity-bgc"></div>
         <div class="header__container container">
-            <div class="header__main wow slideInLeft" data-wow-duration="1s" data-wow-offset='100'>
-                <h1>Нас не надо доставать, нам еще ЕГЭ сдавать!</h1>
-                <p>Здесь учащиеся смогут делиться своими проектами</p>
-                <div class="buttons">
-                    <button class="watchPrj"
-                        onclick="location.href='https://docs.google.com/document/d/1gnChG1KEKOzlujvR7iUG194S_5M6iL_jt6brHroi2OM/edit'">Поделиться</button>
+            <div class="overflowHidden">
+                <div class="header__main wow slideInLeft" data-wow-duration="0.5s" data-wow-offset='100'>
+                    <h1>Нас не надо доставать, нам еще ЕГЭ сдавать!</h1>
+                    <p>Здесь учащиеся смогут делиться своими проектами</p>
+                    <div class="buttons">
+                        <button class="watchPrj"
+                            onclick="location.href='https://docs.google.com/document/d/1gnChG1KEKOzlujvR7iUG194S_5M6iL_jt6brHroi2OM/edit'">Поделиться</button>
+                    </div>
                 </div>
             </div>
-            <div class="header__block wow slideInRight" data-wow-duration="1s" data-wow-offset='100'>
+            <div class="header__block wow fadeIn" data-wow-duration="0.5s" data-wow-offset='100'>
                 <img src="img/headerPict.svg" alt="">
             </div>
         </div>
@@ -71,24 +73,31 @@
 
     <section class="prompt" id="prompt">
         <div class="prompt__container container">
-            <div class="prompt__text wow fadeIn" data-wow-duration="0.5s" data-wow-offset='200'>
-                <h2>Как поделиться проектом</h2>
-                <p>3 простых шага</p>
+            <div class="overflowHidden">
+                <div class="prompt__text wow fadeIn" data-wow-duration="0.5s" data-wow-offset='200'>
+                    <h2>Как поделиться проектом</h2>
+                    <p>3 простых шага</p>
+                </div>
             </div>
             <div class="prompt__steps">
-                <div class="prompt__step prompt__step-1 wow slideInRight" data-wow-offset='200'
-                    data-wow-duration="0.5s">
-                    <h3>Нажать кнопку</h3><button class="btndsbld" disabled="true">Поделиться</button>
-
+                <div class="overflowHidden prompt__overflowHidden-step">
+                    <div class="prompt__step prompt__step-1 wow slideInRight" data-wow-offset='200'
+                        data-wow-duration="0.5s">
+                        <h3>Нажать кнопку</h3><button class="btndsbld" disabled="true">Поделиться</button>
+                    </div>
                 </div>
-                <div class="prompt__step prompt__step-2 wow slideInRight" data-wow-offset='200'
-                    data-wow-duration="0.5s">
-                    <h3>В гугл документе запросить права на редактирование (ФИО уч.)</h3><img src="img/blank.svg"
-                        alt="">
+                <div class="overflowHidden prompt__overflowHidden-step">
+                    <div class="prompt__step prompt__step-2 wow slideInRight" data-wow-offset='200'
+                        data-wow-duration="0.5s">
+                        <h3>В гугл документе запросить права на редактирование (ФИО уч.)</h3><img src="img/blank.svg"
+                            alt="">
+                    </div>
                 </div>
-                <div class="prompt__step prompt__step-3 wow slideInRight" data-wow-offset='200'
-                    data-wow-duration="0.5s">
-                    <h3>Когда права даны, вписать в таблицу необходимую инф.</h3><img src="img/pen.svg" alt="">
+                <div class="overflowHidden prompt__overflowHidden-step">
+                    <div class="prompt__step prompt__step-3 wow slideInRight" data-wow-offset='200'
+                        data-wow-duration="0.5s">
+                        <h3>Когда права даны, вписать в таблицу необходимую инф.</h3><img src="img/pen.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,13 +106,15 @@
     <section class="evaluation" id="evaluation">
         <div class="evaluation__opacity-bgc opacity-bgc"></div>
         <div class="evaluation__container">
-            <div class="evaluation__main wow fadeIn" data-wow-duration="0.5s" data-wow-offset='200'>
-                <div class="evaluation__text">
-                    <h2>Общие критерии оценивания проекта</h2>
-                    <p>Оцениваются работы по следующим общим критериям:</p>
+            <div class="overflowHidden">
+                <div class="evaluation__main wow fadeIn" data-wow-duration="0.5s" data-wow-offset='200'>
+                    <div class="evaluation__text">
+                        <h2>Общие критерии оценивания проекта</h2>
+                        <p>Оцениваются работы по следующим общим критериям:</p>
+                    </div>
                 </div>
             </div>
-            <div class="evaluation__items slider wow slideInRight" data-wow-duration="0.5s" data-wow-offset='200'>
+            <div class="evaluation__items slider wow fadeIn" data-wow-duration="0.5s" data-wow-offset='200'>
                 <div class="evaluation__item-1 evaluation__item slider__item">
                     <h3>Обоснование актуальности проекта</h3>
                 </div>
@@ -132,13 +143,15 @@
 
     <section class="share" id="share">
         <div class="share__container container">
-            <div class="share__main wow slideInRight" data-wow-duration="0.5s" data-wow-offset='200'>
-                <h2>Ученики под конец года должны выставить свои проекты</h2>
-                <p>просмотреть пошаговую инструкцию как поделиться проектом можно выше</p>
-                <button class="watchPrj"
-                    onclick="location.href='https://docs.google.com/document/d/1gnChG1KEKOzlujvR7iUG194S_5M6iL_jt6brHroi2OM/edit'">Поделиться</button>
+            <div class="overflowHidden">
+                <div class="share__main wow slideInRight" data-wow-duration="0.5s" data-wow-offset='200'>
+                    <h2>Ученики под конец года должны выставить свои проекты</h2>
+                    <p>просмотреть пошаговую инструкцию как поделиться проектом можно выше</p>
+                    <button class="watchPrj"
+                        onclick="location.href='https://docs.google.com/document/d/1gnChG1KEKOzlujvR7iUG194S_5M6iL_jt6brHroi2OM/edit'">Поделиться</button>
+                </div>
             </div>
-            <div class="share__img wow slideInLeft" data-wow-duration="1s" data-wow-offset='200'>
+            <div class="share__img wow fadeIn" data-wow-duration="1s" data-wow-offset='200'>
                 <img src="img/schoolboy.svg" alt="">
             </div>
         </div>
