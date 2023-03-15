@@ -788,7 +788,7 @@ a:hover {
     display: none !important;
   }
   .prompt {
-    height: 850px;
+    height: 1000px;
   }
   .prompt .prompt__text {
     margin: 20px !important;
